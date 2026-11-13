@@ -1,0 +1,76 @@
+ACTÚA COMO DESARROLLADOR PYTHON Y ANALISTA FINANCIERO. DESARROLLA EL PROYECTO, NO TE LIMITES A EXPLICARLO.
+
+Proyecto académico individual: Microtaller 6 – FinanTrack, análisis financiero de NovaTech Store.
+Estudiante: Laura Valeria Espejo Mantilla.
+
+IMPORTANTE: En esta carpeta YA existen los archivos data/ventas.csv y data/costos_fijos.csv, suministrados para que el software coincida exactamente con el informe académico. NO regeneres, reemplaces, edites ni modifiques estos CSV. Carga los archivos existentes y realiza cálculos sobre ellos. La empresa y los datos son ficticios. Los datos cubren enero-junio de 2026.
+
+OBJETIVO: crear una aplicación WEB local funcional usando Python 3.12, Streamlit, Pandas y Plotly. La aplicación debe calcular ingresos, costos variables, costos fijos, utilidad operativa, margen operativo, unidades vendidas y punto de equilibrio mensual aproximado. Usa visualizaciones atractivas pero sobrias (azul oscuro, verde y blanco), con diseño responsive y mensajes en español natural.
+
+COLUMNAS REALES CSV:
+ventas.csv: id_venta,fecha,producto,categoria,cantidad,precio_unitario_cop,costo_variable_unitario_cop
+costos_fijos.csv: mes,concepto,valor_cop
+
+FÓRMULAS:
+ingresos = sum(cantidad * precio_unitario_cop)
+costos_variables = sum(cantidad * costo_variable_unitario_cop)
+costos_fijos = sum(valor_cop) para los meses del periodo, SUMADOS UNA SOLA VEZ por concepto/mes
+margen_contribucion = ingresos - costos_variables
+costos_totales = costos_variables + costos_fijos
+utilidad_operativa = ingresos - costos_totales
+margen_operativo_pct = 100 * utilidad_operativa / ingresos si ingresos > 0
+unidades = sum(cantidad)
+punto_equilibrio_mensual_aprox = ceil((costos_fijos / cantidad_meses) / ((ingresos - costos_variables) / unidades)) cuando unidades > 0 y margen de contribución unitario > 0. Explicar supuesto de mezcla de productos constante. No confundir estimación mensual con total semestral. No denominar utilidad neta al indicador de utilidad operativa.
+
+VALORES DE CONTROL A VERIFICAR (CSV ORIGINAL SIN FILTRAR):
+Ingresos: 37.977.000 COP
+Costos variables: 22.064.000 COP
+Costos fijos: 5.383.500 COP
+Costos totales: 27.447.500 COP
+Utilidad operativa: 10.529.500 COP
+Unidades vendidas: 344
+Margen operativo: aprox. 27,73 %
+Punto de equilibrio mensual aproximado: 20 unidades
+Si algún resultado no coincide, investiga y corrige el cálculo SIN ALTERAR LOS CSV.
+
+INTERFAZ:
+- Encabezado FinanTrack, empresa NovaTech Store y etiqueta "Datos ficticios para uso académico".
+- Sidebar con filtros de mes, categoría y producto.
+- Tarjetas KPI para todos los indicadores indicados.
+- Cuatro gráficos Plotly: (1) ingresos vs costos totales por mes; (2) utilidad operativa mensual; (3) participación ingresos por categoría; (4) curva ingresos vs costos totales y punto de equilibrio estimado para un mes promedio.
+- Tabla interactiva de ventas y botón para exportarla a CSV.
+- Explicación desplegable de la metodología y fórmulas.
+- Tres conclusiones calculadas dinámicamente con los registros; distinguir periodo completo de subconjuntos filtrados.
+- Mostrar coherentemente los KPIs en filtros: al filtrar productos o categorías, calcular los ingresos, costos variables, unidades y contribución del subconjunto; los costos fijos corporativos y utilidad operativa global NO deben atribuirse como si fueran de ese producto. Puedes dejar la utilidad operativa global fija en el periodo y etiquetarla claramente, o mostrarla solamente cuando no existe filtro de producto/categoría. El filtro de mes sí debe ajustar costos fijos del periodo seleccionado. Si el subconjunto está vacío, mostrar un mensaje y evitar errores.
+- Manejar errores de lectura, CSV vacío, datos no numéricos y división por cero.
+
+ESTRUCTURA REQUERIDA:
+app.py
+src/calculos.py
+src/__init__.py
+data/ventas.csv [YA EXISTENTE]
+data/costos_fijos.csv [YA EXISTENTE]
+tests/test_calculos.py
+requirements.txt
+README.md
+guion_video.md
+.gitignore
+
+PRUEBAS:
+Escribe pytest con verificación de los totales de control, de los costos fijos sin duplicación, los meses y de punto de equilibrio, además de escenarios de cero ingresos y margen de contribución no positivo. Ejecuta las pruebas y corrige lo que falle.
+
+README:
+Incluye comandos Windows PowerShell para iniciar proyecto:
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+python -m pytest -q
+Incluye explicación de módulos, limitaciones y explicación breve para el docente.
+
+guion_video.md:
+Guion de menos de 3 minutos que indique exactamente qué abrir, qué filtros mover, qué gráficos mostrar, y qué decir sobre 3 conclusiones y el carácter simulado de los datos.
+
+EVIDENCIAS:
+No inventes capturas. Si tu entorno permite crear y verificar una captura real del dashboard, guárdala como evidencias/dashboard.png; de lo contrario indica pasos exactos para tomarla manualmente. NO modifiques el documento Word original; puedes indicar dónde insertar esa imagen y el enlace del video.
+
+TERMINACIÓN:
+Implementa todos los archivos y comprueba que la app se inicia (si es posible en tu entorno). Reporta qué creaste y qué verificaste, sin afirmar que ejecutaste comandos que no ejecutaste. La app ha de funcionar con los CSV proporcionados, sin API ni servicios externos, sin dependencias innecesarias ni datos simulados dentro del código.

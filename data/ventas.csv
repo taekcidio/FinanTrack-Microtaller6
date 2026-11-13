@@ -1,0 +1,61 @@
+﻿id_venta,fecha,producto,categoria,cantidad,precio_unitario_cop,costo_variable_unitario_cop
+NV-01-001,2026-01-22,Teclado mecánico,Periféricos,5,185000,113000
+NV-01-002,2026-01-14,Audífonos con cable,Audio,5,49000,26000
+NV-01-003,2026-01-02,Audífonos inalámbricos,Audio,10,118000,72000
+NV-01-004,2026-01-25,Cargador USB-C,Energía,4,79000,42000
+NV-01-005,2026-01-02,Mouse gamer,Periféricos,9,129000,76000
+NV-01-006,2026-01-06,Mouse ergonómico,Periféricos,10,68000,37000
+NV-01-007,2026-01-31,Soporte para portátil,Accesorios,8,96000,51000
+NV-01-008,2026-01-24,Hub USB-C,Accesorios,5,145000,87000
+NV-01-009,2026-01-23,Teclado mecánico,Periféricos,8,185000,113000
+NV-01-010,2026-01-26,Audífonos con cable,Audio,5,49000,26000
+NV-02-001,2026-02-22,Soporte para portátil,Accesorios,2,96000,51000
+NV-02-002,2026-02-05,Hub USB-C,Accesorios,5,145000,87000
+NV-02-003,2026-02-07,Teclado mecánico,Periféricos,4,185000,113000
+NV-02-004,2026-02-27,Audífonos con cable,Audio,9,49000,26000
+NV-02-005,2026-02-12,Audífonos inalámbricos,Audio,8,118000,72000
+NV-02-006,2026-02-27,Cargador USB-C,Energía,5,79000,42000
+NV-02-007,2026-02-01,Mouse gamer,Periféricos,2,129000,76000
+NV-02-008,2026-02-28,Mouse ergonómico,Periféricos,6,68000,37000
+NV-02-009,2026-02-18,Soporte para portátil,Accesorios,10,96000,51000
+NV-02-010,2026-02-17,Hub USB-C,Accesorios,3,145000,87000
+NV-03-001,2026-03-21,Mouse gamer,Periféricos,2,129000,76000
+NV-03-002,2026-03-15,Mouse ergonómico,Periféricos,2,68000,37000
+NV-03-003,2026-03-11,Soporte para portátil,Accesorios,10,96000,51000
+NV-03-004,2026-03-28,Hub USB-C,Accesorios,7,145000,87000
+NV-03-005,2026-03-14,Teclado mecánico,Periféricos,8,185000,113000
+NV-03-006,2026-03-02,Audífonos con cable,Audio,5,49000,26000
+NV-03-007,2026-03-07,Audífonos inalámbricos,Audio,6,118000,72000
+NV-03-008,2026-03-28,Cargador USB-C,Energía,8,79000,42000
+NV-03-009,2026-03-20,Mouse gamer,Periféricos,8,129000,76000
+NV-03-010,2026-03-05,Mouse ergonómico,Periféricos,10,68000,37000
+NV-04-001,2026-04-04,Audífonos inalámbricos,Audio,2,118000,72000
+NV-04-002,2026-04-05,Cargador USB-C,Energía,3,79000,42000
+NV-04-003,2026-04-18,Mouse gamer,Periféricos,10,129000,76000
+NV-04-004,2026-04-02,Mouse ergonómico,Periféricos,2,68000,37000
+NV-04-005,2026-04-07,Soporte para portátil,Accesorios,8,96000,51000
+NV-04-006,2026-04-20,Hub USB-C,Accesorios,7,145000,87000
+NV-04-007,2026-04-28,Teclado mecánico,Periféricos,3,185000,113000
+NV-04-008,2026-04-11,Audífonos con cable,Audio,10,49000,26000
+NV-04-009,2026-04-14,Audífonos inalámbricos,Audio,3,118000,72000
+NV-04-010,2026-04-14,Cargador USB-C,Energía,2,79000,42000
+NV-05-001,2026-05-19,Teclado mecánico,Periféricos,9,185000,113000
+NV-05-002,2026-05-02,Audífonos con cable,Audio,3,49000,26000
+NV-05-003,2026-05-04,Audífonos inalámbricos,Audio,7,118000,72000
+NV-05-004,2026-05-26,Cargador USB-C,Energía,5,79000,42000
+NV-05-005,2026-05-31,Mouse gamer,Periféricos,3,129000,76000
+NV-05-006,2026-05-22,Mouse ergonómico,Periféricos,4,68000,37000
+NV-05-007,2026-05-12,Soporte para portátil,Accesorios,6,96000,51000
+NV-05-008,2026-05-12,Hub USB-C,Accesorios,8,145000,87000
+NV-05-009,2026-05-16,Teclado mecánico,Periféricos,10,185000,113000
+NV-05-010,2026-05-23,Audífonos con cable,Audio,8,49000,26000
+NV-06-001,2026-06-02,Soporte para portátil,Accesorios,2,96000,51000
+NV-06-002,2026-06-19,Hub USB-C,Accesorios,4,145000,87000
+NV-06-003,2026-06-17,Teclado mecánico,Periféricos,2,185000,113000
+NV-06-004,2026-06-20,Audífonos con cable,Audio,3,49000,26000
+NV-06-005,2026-06-02,Audífonos inalámbricos,Audio,9,118000,72000
+NV-06-006,2026-06-27,Cargador USB-C,Energía,4,79000,42000
+NV-06-007,2026-06-23,Mouse gamer,Periféricos,2,129000,76000
+NV-06-008,2026-06-26,Mouse ergonómico,Periféricos,2,68000,37000
+NV-06-009,2026-06-02,Soporte para portátil,Accesorios,8,96000,51000
+NV-06-010,2026-06-14,Hub USB-C,Accesorios,6,145000,87000
